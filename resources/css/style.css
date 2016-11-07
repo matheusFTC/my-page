@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 * {
@@ -43,7 +45,7 @@ div.content {
 	margin: 2em auto;
 }
 
-ul.activities {
+ul {
 	list-style: none;
 }
 
@@ -113,22 +115,12 @@ section#header header h1 {
 	color: #ffffff;
 }
 
-section#header > nav {
-	flex-grow: 1;
-}
-
-section#header > nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 section#header a:hover {
 	color: #000;
 }
 
-section#header nav#menu a:hover {
-	text-decoration: underline;
+section#header footer {
+	margin-top: 4em;
 }
 
 div#wrapper {
@@ -149,7 +141,7 @@ div#wrapper {
 
 	div#wrapper {
 		width: unset;
-		padding: 1.3em 0.7em;
+		padding: 1.3em 0.8em;
 	}
 }
 
