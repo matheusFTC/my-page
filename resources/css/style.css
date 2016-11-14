@@ -32,8 +32,15 @@ h1, h2, h3 {
 }
 
 h1, h3 {
-	margin-bottom: 1em;
 	color: #666666;
+}
+
+h1 {
+	margin-bottom: 0.1em;
+}
+
+h3 {
+	margin-bottom: 1em;
 }
 
 h2 {
@@ -89,6 +96,7 @@ input[type="text"], input[type="email"], textarea {
 }
 
 input[type="submit"] {
+	padding: 12px;
 	cursor: pointer;
 	background-color: #336699;
 	color: #ffffff;
@@ -125,14 +133,14 @@ section#header footer {
 
 div#wrapper {
 	width: 65%;
-	padding: 1.3em 6em;
+	padding: 0.1em 6em;
 	background: #fff;
 }
 
 @media screen and (max-width: 768px) {
 
 	div#container {
-		display: block;
+		flex-flow: column;
 	}
 
 	section#header {
@@ -151,4 +159,17 @@ div#wrapper {
 		display: inline-block;
 		width: 40%;
 	}
+}
+
+a#back {
+	position: fixed;
+	right: 10px;
+	bottom: -10px;
+	opacity: 0;
+	transition: all 1s;
+}
+
+a#back.active {
+	bottom: 10px;
+	opacity: 1;
 }
